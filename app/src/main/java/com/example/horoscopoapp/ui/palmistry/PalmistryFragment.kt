@@ -25,7 +25,7 @@ class PalmistryFragment : Fragment() {
         ActivityResultContracts.RequestPermission()
     ) { isGranted ->
         if (isGranted) {
-
+            //Iniciar camara
         } else {
             Toast.makeText(requireContext(), "Permission Denied", Toast.LENGTH_LONG).show()
         }
@@ -34,7 +34,7 @@ class PalmistryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         if (checkCameraPermission()) {
-
+            // Tiene permisos aceptados
         } else {
             requestPermissionLauncher.launch(CAMERA_PERMISSION)
         }
