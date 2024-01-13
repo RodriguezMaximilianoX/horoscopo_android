@@ -38,7 +38,7 @@ android {
 
             resValue("string", "macsiname", "[DEBUG] Horoscopo App")
 
-            buildConfigField("String", "BASE_URL", "\"https://newastro-debug.vercel.app/\"")
+            buildConfigField("String", "BASE_URL", "\"https://newastro.vercel.app/\"")
         }
     }
     compileOptions {
